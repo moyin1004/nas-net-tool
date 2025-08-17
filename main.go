@@ -42,8 +42,8 @@ func (d *Data) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusInternalServerError)
 }
 
-// sudo docker build . -t nas_net_tool:latest
-// sudo docker run -itd --network host --name nas_net_tool nas_net_tool -interface enp7s0
+// sudo docker build . -t nas-net-tool:latest
+// sudo docker run -itd --network host --name nas-net-tool nas-net-tool -interface br0
 
 func main() {
 	flag.Parse()
